@@ -4797,6 +4797,16 @@ body {
   height: 44px; 
   width: 312px;
 }
-.btn-primary{
+.sponsor .logo{
+  /* background-color: #0184b9; */
+  height: 100%;
   
 }
+
+.sponsor .logo img{
+  margin:1em;
+}
+.tier{
+  width: 8em;
+}
+
