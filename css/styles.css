@@ -6058,9 +6058,9 @@ body {
   /* filter:drop-shadow(30px 40px 40px rgb(184, 241, 232)); */
   transition: all 0.1s ease-in;
 }
-.sponsor .logo img:hover {
+/* .sponsor .logo img:hover {
   filter: drop-shadow(4px 4px 10px rgb(184, 241, 232));
-}
+} */
 /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
 .tier {
   width: 5em;
