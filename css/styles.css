@@ -5904,7 +5904,7 @@ body {
   transition-duration: 1s;
 }
 
-@media (max-width: 1920px) {
+
   .discord-button {
     font-size: 15px;
     font-family: Arial;
@@ -5927,8 +5927,8 @@ body {
     left: 46%;
     backdrop-filter: blur(25px);
     transition: 300ms;
-  }
 
+  }
   .discord-button:hover {
     background-color: #403724;
     box-shadow: 0px 0px 100px 4px #7a6a45;
@@ -5940,7 +5940,6 @@ body {
     margin: 0px auto !important;
   }
 
-}
 
 .maketextinline {
   font-size: 1em !important;
