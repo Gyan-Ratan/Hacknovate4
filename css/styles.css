@@ -331,6 +331,7 @@ option {
 
 .navbar-brand {
   line-height: 30px !important;
+  display: none;
 }
 
 .navbar .container {
@@ -393,23 +394,26 @@ a.navbar-logo:hover {
   .plain-link {
     border-bottom: 1px solid #383838;
   }
+  .navbar-brand {
+    display: block;
+  }
 }
 
 .plain-link a {
   color: #c4ae78 !important;
-  font-size: 120%;
+  font-size: 1.2em;
   transition: all 0.33s;
 }
 
 @media (min-width: 768px) {
   .plain-link a {
-    font-size: 100%;
+    font-size: 1.2em;
   }
 }
 
 @media (min-width: 992px) {
   .plain-link a {
-    font-size: 100%;
+    font-size: 1em;
   }
 }
 
@@ -431,7 +435,7 @@ a.navbar-logo:hover {
 }
 
 .collapsing .plain-link a, .in .plain-link a {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*------------------------------------------------------------------
@@ -6074,4 +6078,86 @@ body {
   .tier{
     display: none;
   }
+}
+
+
+
+
+/* CARDS */
+
+.track-prize-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.track-prize-cards > * > p{
+    color: #c4ae78 !important;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.track-prize-card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.track-prize-card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.track-prize-card__link,
+.track-prize-card__exit,
+.track-prize-card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.track-prize-card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.track-prize-card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.track-prize-card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  /* color: #ffffff; */
+  margin: 0.5rem 0.2em 0.2em 0.2em;
+}
+
+.track-prize-card__apply {
+  grid-row: 4/5;
+  align-self: center;
+  
+}
+
+/* CARD BACKGROUNDS */
+
+.track-prize-card-1 {
+  background: transparent;
+  border: 2px solid #ecd19a;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .track-prize-cards {
+    justify-content: center;
+  }
+}
+.track-prize-card-details {
+  color: white;
 }
