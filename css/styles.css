@@ -6090,7 +6090,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.track-prize-cards > * > p ,*{
+.track-prize-cards > * > p , strong{
     color: #c4ae78 !important;
     font-size: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
